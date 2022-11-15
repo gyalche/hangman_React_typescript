@@ -63,7 +63,7 @@ const LEFT_LEG = (
       position: 'absolute',
       top: '210px',
       right: '0',
-      rotate: '-30deg',
+      rotate: '-60deg',
       transformOrigin: 'right bottom',
     }}
   />
@@ -78,7 +78,7 @@ const RIGHT_LEG = (
       top: '210px',
       right: '-90px',
       backgroundColor: 'black',
-      rotate: '-30 deg',
+      rotate: '60deg',
       transformOrigin: 'left bottom',
     }}
   />

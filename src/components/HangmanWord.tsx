@@ -1,7 +1,14 @@
 import React from 'react';
 
 const HangmanWord = () => {
-  return <div>HangmanWord</div>;
+  return (
+    <div
+      style={{
+        display: 'flex',
+      }}>
+      HangmanWord
+    </div>
+  );
 };
 
 export default HangmanWord;

@@ -1,8 +1,8 @@
 import React from 'react';
 
 const HangmanWord = () => {
-  let guessLetter = ['t'];
-  const word = 'dawa';
+  let guessedLetter = ['t', 'e', 'g', 't'];
+  const word = 'test';
   return (
     <div
       style={{
@@ -14,12 +14,12 @@ const HangmanWord = () => {
         fontFamily: 'monospace',
       }}>
       {word.split('').map((letter, index) => (
-        <span style={{ borderBottom: '.1em solid black' }}>
+        <span key={index} style={{ borderBottom: '.1em solid black' }}>
           <span
             style={{
-              visibility: guessLetter.includes(letter) ? 'visible' : 'hidden',
+              visibility: guessedLetter.includes(letter) ? 'visible' : 'hidden',
             }}>
-            {index}
+            {letter}
           </span>
         </span>
       ))}

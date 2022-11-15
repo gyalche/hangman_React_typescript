@@ -1,0 +1,23 @@
+.button {
+  width: 100%;
+  background: none;
+  border: 3px solid black border;
+  aspect-ratio: 1/0.5;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+}
+.button.active {
+  background-color: hsl(200, 100%, 50);
+  color: white;
+}
+.button.inactive {
+  opacity: 0.3;
+}
+.button:hover:not(:disabled),
+.button:focus:not(:disabled) {
+  background-color: aliceblue;
+}
